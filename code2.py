@@ -1,10 +1,18 @@
-num1=int(input("enter no.1"))
-num2=int(input("enter no. 2"))
-num3=int(input("enter no. 3"))
-if num1<num2 and num1<num3:
-    print(num1,"is min")
-elif num2<num1 and num2<num3:
-    print(num2,"is min")
-else:
-    print(num3,"is min")
+rows=int(input("enter the input"))
+num=0
+for x in range(rows):
+   # num=0
+    for y in range(rows):
+
+        if (x+y)%2==0:
+            
+            
+            print(chr(65+num),end=" ")
+            num=num+1
+        else:
+            print(chr(97+num),end=" ")
+            num=num+1 
+            
+    print()
+    
 
