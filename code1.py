@@ -1,11 +1,9 @@
-rows=int(input("enter the input"))
+#Comparing arrays
+import numpy
+arr1=numpy.array([10,20,30,40,50])
+arr2=numpy.array([5,10,15,87,53])
 
-num=1
-for x in range(rows):
-    num=x+1
-    for y in range(rows):
-        print(num,end=" ") 
-        sum=num+3
-        num=sum
-    print() 
+
+arr3=arr1<=arr2
+print(arr3)
 
