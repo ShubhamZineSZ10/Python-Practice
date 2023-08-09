@@ -1,15 +1,18 @@
-import array
-arr=array.array('I',[])
-num=int(input("enter no. of elements in array: "))
-for i in range(num):
+""" Objects of same class have different address,
+it means there are two different namespaces formed"""
 
-    n=int(input("enter the element: "))
-    arr.append(n)
 
-print(arr)
+class IPL:
+    teams=10
+    format="t20"
 
-for x in  arr:
-    if x%2==0:
-        print(x)
+    def match(self):
+        print("csk vs mi")
 
-        
+
+obj1=IPL()
+obj2=IPL()
+print(obj1)
+print(obj2)
+print(obj1.__class__)
+print(obj2.__class__)
