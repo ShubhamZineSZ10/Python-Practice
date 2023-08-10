@@ -1,30 +1,45 @@
-"""
-    INSTANCE VARIABLE AND INSTANCE METHOD """
-                                             
- 
+class Byjus:
 
-class Class:
-    x=10
+    founder="Ravindran Byju"
+    
     def __init__(self):
-        print("In Constructor")
-        self.a=1
-        self.b=2
+    
+        self.myCourses=5
+        self.myMarks=89
 
-    def Inst(self):
-        print("In Static method")
-        print(self.a)
-        self.c=3
-        print(self.c)
+    def myReport(self):
 
-obj1=Class()
-obj1.Inst()
-print(obj1.b)     
-print(obj1.x)     #class variable can be called with the object as object namespace contains a copy of class variables
-print(Class.x)    #class variable can be called with class name
+        print("Byjus Student Info")
+        print(self.myCourses)
+        print(self.myMarks)
 
-obj2=Class()
-obj2.Inst(
+    @classmethod
+    def demoLectures(cls):
+        print(cls.founder)
 
-        )
-print(obj1)
-print(obj2)
+class Akash(Byjus):
+    
+    def __init__(self):
+        
+        super().__init__()
+        
+        self.teachers=100
+        self.revenue="2.5 B$"
+
+    def management(self):
+
+        print("Akash's Info")
+        print(self.teachers)
+        print(self.revenue)
+           
+
+Obj1=Akash()
+Obj1.management()
+Obj1.myReport()
+Obj1.demoLectures()
+Obj1.founder="asdf"
+print(Obj1.founder)
+
+Obj1.demoLectures()
+
+
