@@ -1,10 +1,4 @@
-import array
-arr=array.array('i',[])
-num=int(input("enter the number of elements: "))
-for i in range(num):
-    n=int(input("enter elements: "))
-    arr.append(n)
-print(arr)
-x=int(input("Search: "))
-print(arr.index(x))
+'''1A 2B 3C
+   4D 5E 6F
+   7G 8H 9I'''
 
