@@ -1,3 +1,7 @@
-'''1  3  5
-   7  9  11
-   13 15 17'''
+# FACTORIAL
+num=int(input("Enter the no.: "))
+fact =1
+for i in range(1,num+1):
+    fact*=i
+print("Factorial = ",fact)
+    

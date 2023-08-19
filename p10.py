@@ -1,19 +1,15 @@
-import array
-arr=array.array('i',[])
-num=int(input("enter no of elements: "))
-for i in range(num):
-    n=int(input("enter elements: "))
-    arr.append(n)
-print(arr)
-x=0
-for x in range(num):
-
-    for i in range(0,x+1,2):            
-         temp=arr[x]
-         arr[x]=arr[x+1]
-         arr[x+1]=temp
-        
-
-print(arr)
-
-
+#STRONG NUMBER
+num=int(input("Enter the number: "))
+sum=0
+temp = num
+while temp>0:
+    rem=temp%10
+    fact=1
+    for i in range(1,rem+1):
+        fact *=i
+    sum=sum+fact
+    temp=temp//10
+if(sum == num):
+    print("Strong Number..")
+else:
+    print("Not a Strong number..")
