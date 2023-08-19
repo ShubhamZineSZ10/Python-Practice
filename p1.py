@@ -1,8 +1,32 @@
-num1=int(input("Enter num1: "))
-num2=int(input("Enter num2: "))
-if(num1>num2):
-    print(num1," is greater than ",num2)
-elif(num1<num2):
-    print(num2," is greater than ",num1)
-else:
-    print("Both are equal")
+lst=[1,2,3,4,5,6,7,8,9,10]
+#APPEND()
+print(lst[4])
+print(lst[-4])
+print(lst[-1])
+print(lst)
+lst.append(45)
+lst.append(5)
+print(lst)
+lst.append((4,5,4))
+print(lst)
+print(lst[12])
+tup=[1,2,1,2,3]
+tup1=(1,2,1,2,3)
+lst.append(tup)
+print(lst)
+lst.append(tup1)
+print(lst)
+#INSERT()
+lst1=[4,5,1,"shubham","vishal",5,4]
+print(lst1)
+lst1.insert(0,"ajay")
+lst1.insert(8,"ajay")
+lst1.insert(-1,"dhole")
+lst1.insert(6,tup)
+print(lst1)
+#EXTEND()
+lst2=[1,2,3,4,"ssdaf","hggff"]
+print(lst2)
+lst2.extend([1,2,4,"nvcnbv"])
+lst2.extend([8,9,tup])
+print(lst2)
